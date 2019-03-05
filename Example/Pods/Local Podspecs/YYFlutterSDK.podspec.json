@@ -1,0 +1,25 @@
+{
+  "name": "YYFlutterSDK",
+  "version": "0.1.0",
+  "summary": "A short description of YYFlutterSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/673697831/YYFlutterSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "673697831": "ouzhirui@yy.com"
+  },
+  "source": {
+    "git": "https://github.com/673697831/YYFlutterSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YYFlutterSDK/Classes/**/*",
+  "ios": {
+    "vendored_frameworks": "YYFlutterSDK/Library/App.framework"
+  }
+}
