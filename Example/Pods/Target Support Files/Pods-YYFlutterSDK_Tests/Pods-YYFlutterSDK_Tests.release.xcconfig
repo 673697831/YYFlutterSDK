@@ -1,4 +1,4 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine" "${PODS_ROOT}/../../YYFlutterSDK/Library"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine" "${PODS_ROOT}/../../flutter_module/.ios/Flutter"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Flutter" "${PODS_ROOT}/Headers/Public/FlutterPluginRegistrant" "${PODS_ROOT}/Headers/Public/YYFlutterSDK"
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant" "${PODS_CONFIGURATION_BUILD_DIR}/YYFlutterSDK"
@@ -8,4 +8,4 @@ PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
-#include "/Users/ouzhirui/Desktop/私有pods/fluttersdk/flutter_module/.ios/Flutter/Generated.xcconfig"
+#include "/Users/ouzhirui/YYFlutterSDK/flutter_module/.ios/Flutter/Generated.xcconfig"

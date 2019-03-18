@@ -20,6 +20,6 @@
   },
   "source_files": "YYFlutterSDK/Classes/**/*",
   "ios": {
-    "vendored_frameworks": "YYFlutterSDK/Library/App.framework"
+    "vendored_frameworks": "flutter_module/.ios/Flutter/App.framework"
   }
 }
