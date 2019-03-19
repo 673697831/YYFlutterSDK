@@ -3,11 +3,11 @@
 //  YYFlutterSDK
 //
 //  Created by 673697831 on 03/05/2019.
-//  Copyright (c) 2019 673697831. All rights reserved.
+//  Copyright (c) 2019 ozr. All rights reserved.
 //
 
 #import "YYViewController.h"
-#import <Flutter/Flutter.h>
+#import "YYFlutterSDK.h"
 
 @interface YYViewController ()
 
@@ -30,10 +30,7 @@
 }
 
 - (void)handleButtonAction {
-    FlutterViewController *flutterViewController = [[FlutterViewController alloc] init];
-    flutterViewController.view.backgroundColor = [UIColor cyanColor];
-    [flutterViewController setInitialRoute:@"route1"];
-    [self presentViewController:flutterViewController animated:YES completion:nil];
+    [YYFlutterSDK pushFlutterViewController:self];
 }
 
 @end

@@ -208,7 +208,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				F30AC42491CC75C3A7B69072 /* [CP] Embed Pods Frameworks */,
-				8CCA2A7F222E7EE600FAE958 /* ShellScript */,
 				30A90F7FB94331C22E75D109 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -249,7 +248,7 @@
 			attributes = {
 				CLASSPREFIX = YY;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = 673697831;
+				ORGANIZATIONNAME = ozr;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -355,23 +354,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Example/Pods-YYFlutterSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CCA2A7F222E7EE600FAE958 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
-		};
 		C34EAE3929AE56F3D231557F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,13 +397,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Example/Pods-YYFlutterSDK_Example-frameworks.sh",
-				"${PODS_ROOT}/../../flutter_module/.ios/Flutter/engine/Flutter.framework",
-				"${PODS_ROOT}/../../flutter_module/.ios/Flutter/App.framework",
+				"${PODS_ROOT}/../../YYFlutterSDK/Library/App.framework",
+				"${PODS_ROOT}/../../YYFlutterSDK/Library/Flutter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -3,19 +3,17 @@
 //  YYFlutterSDK
 //
 //  Created by 673697831 on 03/05/2019.
-//  Copyright (c) 2019 673697831. All rights reserved.
+//  Copyright (c) 2019 ozr. All rights reserved.
 //
 
 #import "YYAppDelegate.h"
-#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 
 @implementation YYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [GeneratedPluginRegistrant registerWithRegistry:self];
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
