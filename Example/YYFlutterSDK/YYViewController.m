@@ -30,7 +30,9 @@
 }
 
 - (void)handleButtonAction {
-    [YYFlutterSDK pushFlutterViewController:self];
+    [YYFlutterSDK pushFlutterViewController:^(UIViewController * vc) {
+        [self presentViewController:vc animated:YES completion:nil];
+    }];
 }
 
 @end

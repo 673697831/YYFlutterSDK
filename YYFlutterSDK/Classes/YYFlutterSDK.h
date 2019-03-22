@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YYFlutterSDK : NSObject
 
-+ (void)pushFlutterViewController:(UIViewController *)vc;
++ (void)pushFlutterViewController:(void (^)(UIViewController *))block;
 
 @end
 

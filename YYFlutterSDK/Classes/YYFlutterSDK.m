@@ -11,12 +11,14 @@
 
 @implementation YYFlutterSDK
 
-+ (void)pushFlutterViewController:(UIViewController *)vc
++ (void)pushFlutterViewController:(void (^)(UIViewController *))block
 {
-    FlutterViewController *flutterViewController = [[FlutterViewController alloc] init];
-    flutterViewController.view.backgroundColor = [UIColor cyanColor];
-    [flutterViewController setInitialRoute:@"route1"];
-    [vc presentViewController:flutterViewController animated:YES completion:nil];
+    if (block) {
+        FlutterViewController *flutterViewController = [[FlutterViewController alloc] init];
+        flutterViewController.view.backgroundColor = [UIColor cyanColor];
+        [flutterViewController setInitialRoute:@"route1"];
+        block(flutterViewController);
+    }
 }
 
 @end
