@@ -15,7 +15,7 @@
 {
     if (block) {
         FlutterViewController *flutterViewController = [[FlutterViewController alloc] init];
-        flutterViewController.view.backgroundColor = [UIColor cyanColor];
+        flutterViewController.view.backgroundColor = [UIColor clearColor];
         [flutterViewController setInitialRoute:@"route1"];
         block(flutterViewController);
     }
