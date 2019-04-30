@@ -1,0 +1,1 @@
+../../../../../../YYFlutterModule/outProduct/ios/plugins/package_info/PackageInfoPlugin.h

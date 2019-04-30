@@ -1,16 +1,37 @@
 PODS:
-  - YYFlutterSDK (0.1.0)
+  - crashreportsdk/static (2.0.5):
+    - curl (= 7620.6703.0)
+  - curl (7620.6703.0)
+  - FlutterApi (0.0.4):
+    - crashreportsdk/static
+    - openssl (= 111.6717.0)
+  - openssl (111.6717.0)
+  - YYFlutterSDK (0.1.0):
+    - FlutterApi
 
 DEPENDENCIES:
+  - FlutterApi (from `../../YYFlutterModule`)
   - YYFlutterSDK (from `../`)
 
+SPEC REPOS:
+  https://git.yy.com/ci_team/Specs.git:
+    - crashreportsdk
+    - curl
+    - openssl
+
 EXTERNAL SOURCES:
+  FlutterApi:
+    :path: "../../YYFlutterModule"
   YYFlutterSDK:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  YYFlutterSDK: 81bc69aab6d24d6f28239393e83ff836cc6c4290
+  crashreportsdk: 7b3c8704a0934bb1a2362e3d3ab65e4691032dfd
+  curl: 8d880c887caa24ecdef59cb6131822ec3aaa0966
+  FlutterApi: 345adf48711346d50becab571302cee6eae1732b
+  openssl: 71cd5e8f182ce698ce3853f6231258453a10ed10
+  YYFlutterSDK: 17eb9c7e650d46ce7a9f8cb8e3124edb5c9894bb
 
-PODFILE CHECKSUM: d67f112c89b4817b5bdb1f322067e04860187704
+PODFILE CHECKSUM: 6a03abfbd28f75ea28ff365f6fec73e80aeec7ce
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

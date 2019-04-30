@@ -1,0 +1,1 @@
+../../../../../../YYFlutterModule/outProduct/ios/plugins/battery/BatteryPlugin.h

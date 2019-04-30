@@ -1,1 +1,0 @@
-../../../../../../YYFlutterSDK/Library/Flutter.framework/Headers/FlutterPlugin.h

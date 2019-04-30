@@ -1,0 +1,1 @@
+../../../../../YYFlutterSDK/Classes/IYYFlutterPluginProtocol.h

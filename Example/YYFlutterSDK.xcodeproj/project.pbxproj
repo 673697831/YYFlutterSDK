@@ -207,8 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				F30AC42491CC75C3A7B69072 /* [CP] Embed Pods Frameworks */,
-				30A90F7FB94331C22E75D109 /* [CP] Copy Pods Resources */,
+				050525CC543F501B6CDD8753 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,8 +226,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				05E1002E9866C77618960317 /* [CP] Embed Pods Frameworks */,
-				27750A0C09CC3CF575B95C7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,7 +294,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05E1002E9866C77618960317 /* [CP] Embed Pods Frameworks */ = {
+		050525CC543F501B6CDD8753 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,53 +302,20 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Example/Pods-YYFlutterSDK_Example-frameworks.sh",
+				"${PODS_ROOT}/../../../YYFlutterModule/outProduct/ios/flutter/App.framework",
+				"${PODS_ROOT}/../../../YYFlutterModule/outProduct/ios/flutter/Flutter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Tests/Pods-YYFlutterSDK_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		27750A0C09CC3CF575B95C7F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Tests/Pods-YYFlutterSDK_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30A90F7FB94331C22E75D109 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Example/Pods-YYFlutterSDK_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Example/Pods-YYFlutterSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C34EAE3929AE56F3D231557F /* [CP] Check Pods Manifest.lock */ = {
@@ -388,26 +352,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F30AC42491CC75C3A7B69072 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Example/Pods-YYFlutterSDK_Example-frameworks.sh",
-				"${PODS_ROOT}/../../YYFlutterSDK/Library/App.framework",
-				"${PODS_ROOT}/../../YYFlutterSDK/Library/Flutter.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFlutterSDK_Example/Pods-YYFlutterSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

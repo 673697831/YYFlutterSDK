@@ -19,10 +19,9 @@
     "ios": "8.0"
   },
   "source_files": "YYFlutterSDK/Classes/**/*",
-  "ios": {
-    "vendored_frameworks": [
-      "YYFlutterSDK/Library/App.framework",
-      "YYFlutterSDK/Library/Flutter.framework"
+  "dependencies": {
+    "FlutterApi": [
+
     ]
   }
 }

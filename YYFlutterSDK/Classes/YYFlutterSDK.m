@@ -1,24 +1,13 @@
 //
-//  FlutterSDK.m
-//  YYFlutterSDK2_Example
+//  YYFlutterSDK.m
+//  YYMobile
 //
-//  Created by ouzhirui on 2019/3/18.
-//  Copyright © 2019年 ozr. All rights reserved.
+//  Created by ouzhirui on 2019/4/23.
+//  Copyright © 2019年 YY.inc. All rights reserved.
 //
 
 #import "YYFlutterSDK.h"
-#import <Flutter/Flutter.h>
 
 @implementation YYFlutterSDK
-
-+ (void)pushFlutterViewController:(void (^)(UIViewController *))block
-{
-    if (block) {
-        FlutterViewController *flutterViewController = [[FlutterViewController alloc] init];
-        flutterViewController.view.backgroundColor = [UIColor clearColor];
-        [flutterViewController setInitialRoute:@"route1"];
-        block(flutterViewController);
-    }
-}
 
 @end

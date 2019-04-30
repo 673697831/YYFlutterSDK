@@ -1,10 +1,10 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../YYFlutterSDK/Library"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../../YYFlutterModule/outProduct/ios/flutter"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/YYFlutterSDK"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FlutterApi" "${PODS_ROOT}/Headers/Public/YYFlutterSDK" "${PODS_ROOT}/Headers/Public/crashreportsdk" "${PODS_ROOT}/Headers/Public/curl" "${PODS_ROOT}/Headers/Public/openssl"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YYFlutterSDK"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/YYFlutterSDK"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"YYFlutterSDK" -framework "App" -framework "Flutter"
+LIBRARY_SEARCH_PATHS = $(inherited) $(PODS_ROOT)/crashreportsdk/libs/ $(PODS_ROOT)/curl/libs/ $(PODS_ROOT)/openssl/lib/ "${PODS_CONFIGURATION_BUILD_DIR}/FlutterApi" "${PODS_CONFIGURATION_BUILD_DIR}/YYFlutterSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FlutterApi" -isystem "${PODS_ROOT}/Headers/Public/YYFlutterSDK" -isystem "${PODS_ROOT}/Headers/Public/crashreportsdk" -isystem "${PODS_ROOT}/Headers/Public/curl" -isystem "${PODS_ROOT}/Headers/Public/openssl"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FlutterApi" -l"YYFlutterSDK" -l"c++" -l"crashreport" -l"crypto" -l"curl" -l"ssl" -l"z" -framework "App" -framework "Flutter"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

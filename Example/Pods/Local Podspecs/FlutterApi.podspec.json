@@ -1,0 +1,32 @@
+{
+  "name": "FlutterApi",
+  "version": "0.0.4",
+  "summary": "A short description of flutterApi.",
+  "homepage": "https://github.com/673697831/YYFlutterModule",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ouzhirui": "ouzhirui@yy.com"
+  },
+  "source": {
+    "git": "https://github.com/673697831/YYFlutterModule.git"
+  },
+  "source_files": [
+    "outProduct/ios/flutter/FlutterPluginRegistrant/**/*.{h,m,mm}",
+    "outProduct/ios/plugins/**/*.{h,m,mm}"
+  ],
+  "vendored_frameworks": "outProduct/ios/flutter/*.framework",
+  "dependencies": {
+    "crashreportsdk/static": [
+
+    ],
+    "openssl": [
+      "111.6717.0"
+    ]
+  }
+}

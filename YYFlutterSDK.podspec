@@ -29,8 +29,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'YYFlutterSDK/Classes/**/*'
+  s.default_subspec  = 'Release'
   
   # s.resource_bundles = {
   #   'YYFlutterSDK' => ['YYFlutterSDK/Assets/*.png']
@@ -39,5 +38,20 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.ios.vendored_frameworks = "YYFlutterSDK/Library/App.framework", "YYFlutterSDK/Library/Flutter.framework"
+  
+  s.subspec 'Dev' do |ss|
+    ss.source_files = 'YYFlutterSDK/Classes/**/*'
+  end
+  
+  s.subspec 'Debug' do |ss|
+      ss.source_files = 'YYFlutterSDK/Classes/**/*'
+      ss.dependency 'FlutterApi', '0.1.0-dev'
+  end
+  
+  s.subspec 'Release' do |ss|
+      ss.source_files = 'YYFlutterSDK/Classes/**/*'
+      ss.dependency 'FlutterApi', '0.1.0'
+  end
+
+  
 end
