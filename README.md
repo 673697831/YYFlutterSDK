@@ -12,14 +12,25 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-YYFlutterSDK is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+- 使用 `Release` 外发版本(默认)
 
 ```ruby
+pod 'FlutterApi', :git => 'https://github.com/673697831/YYFlutterModule.git'
 pod 'YYFlutterSDK'
 ```
 
-## Author xixihaha
+- 使用 `Debug` 可调式外发版本
+
+```ruby
+pod 'FlutterApi', :git => 'https://github.com/673697831/YYFlutterModule.git'
+pod 'YYFlutterSDK/Debug', :path => '../YYFlutterSDK'
+```
+
+- 使用 `Dev` 本地依赖集成 `Flutter`
+
+```ruby
+pod 'YYFlutterSDK/Dev', :path => '../YYFlutterSDK'
+```
 
 ## License
 
